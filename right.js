@@ -1,21 +1,19 @@
-let n = 5 ;
+let n = 5;
+let row = '';
 
-let row = ' ';
+for (let i = 1; i <= n; i++) {
+  row = '';
 
-
-for (let i = 1; i >= n ; i++){
-    
- row  = ' ';
-
-  for (let j = n ; j > i ; j++   ){
-
-      row = ' ' ; 
+  // Add spaces before the stars
+  for (let j = n; j > i; j--) {
+    row += ' ';
   }
-  for (let k = 1; k <= i ; k ){
 
-      row  +=  ' * ';
-      
-  }z
+  // Add stars
+  for (let k = 1; k <= i; k++) {
+    row += '* ';
+  }
 
+  // Print each row
+  console.log(row);
 }
-console.log(row)

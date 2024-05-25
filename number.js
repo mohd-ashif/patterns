@@ -4,7 +4,7 @@ let count  = 1;
 
 for (let i = 1; i<= n ; i++){
     
-    let row  = ' ';
+    let row  = '';
 
     for (let j = n ; j > i ; j--   ){
 
